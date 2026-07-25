@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, CheckCircle2, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, Clock } from 'lucide-react';
 
 export const ContactPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -50,22 +50,6 @@ export const ContactPage: React.FC = () => {
                 <span>Working Hours: Mon - Sun (8:00 AM - 9:00 PM IST)</span>
               </div>
             </div>
-          </div>
-
-          <div className="bg-emerald-50 border border-emerald-200 rounded-3xl p-6 space-y-3">
-            <h4 className="font-bold text-emerald-950 text-sm flex items-center gap-2">
-              <MessageCircle className="w-5 h-5 text-emerald-600" />
-              <span>Instant WhatsApp Support</span>
-            </h4>
-            <p className="text-xs text-slate-600">Need an immediate answer while travelling in Sri Lanka?</p>
-            <a
-              href="https://wa.me/94771234567"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs py-3 rounded-xl text-center shadow"
-            >
-              Chat on WhatsApp Now
-            </a>
           </div>
         </div>
 
