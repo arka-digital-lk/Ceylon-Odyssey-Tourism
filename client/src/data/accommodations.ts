@@ -1,0 +1,61 @@
+import { Accommodation } from '../types';
+
+export const SAMPLE_ACCOMMODATIONS: Accommodation[] = [
+  {
+    id: '98-acres-resort-ella',
+    slug: '98-acres-resort-ella',
+    name: '98 Acres Resort & Spa',
+    destination: 'Ella',
+    type: 'Eco-Lodge',
+    heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop',
+    gallery: ['https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop'],
+    description: 'An elegant luxury eco-resort built on a 98-acre tea estate overlooking Little Adam’s Peak and Ella Gap.',
+    pricePerNightLKR: 92000,
+    pricePerNightUSD: 295,
+    rating: 4.9,
+    reviewCount: 310,
+    facilities: ['Infinity Pool facing Ella Gap', 'Ayurveda Spa', 'Tea Tasting Verandah', 'Helipad', 'Free Wi-Fi'],
+    roomTypes: ['Standard Deluxe Chalet', 'Executive Suite with Private Pool', 'Honey Moon Villa'],
+    checkInTime: '14:00',
+    checkOutTime: '11:00',
+    nearbyAttractions: ['Little Adam’s Peak', 'Nine Arch Bridge', 'Flying Ravana Zipline']
+  },
+  {
+    id: 'cinnamon-lodge-habarana',
+    slug: 'cinnamon-lodge-habarana',
+    name: 'Cinnamon Lodge Habarana',
+    destination: 'Sigiriya',
+    type: 'Resort',
+    heroImage: 'https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=800&auto=format&fit=crop',
+    gallery: ['https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=800&auto=format&fit=crop'],
+    description: 'A 27-acre forest retreat nestled beside Habarana Lake, offering peaceful chalets surrounded by ancient trees and wild peacocks.',
+    pricePerNightLKR: 65000,
+    pricePerNightUSD: 210,
+    rating: 4.8,
+    reviewCount: 245,
+    facilities: ['Olympic-size Pool', 'Ayurvedic Wellness Center', 'Lakefront Dining', 'Tennis Court'],
+    roomTypes: ['Superior Cottage', 'Deluxe Suite'],
+    checkInTime: '14:00',
+    checkOutTime: '12:00',
+    nearbyAttractions: ['Sigiriya Rock Citadel', 'Minneriya Elephant Gathering', 'Dambulla Caves']
+  },
+  {
+    id: 'mandara-resort-mirissa',
+    slug: 'mandara-resort-mirissa',
+    name: 'Mandara Resort Mirissa',
+    destination: 'Mirissa',
+    type: 'Resort',
+    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop',
+    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop'],
+    description: 'Beachfront luxury resort situated where the river meets the Indian Ocean bay in Red Cliff, Mirissa.',
+    pricePerNightLKR: 58000,
+    pricePerNightUSD: 185,
+    rating: 4.7,
+    reviewCount: 180,
+    facilities: ['Beachfront Swimming Pool', 'Seafood Grill Bar', 'Fitness Center', 'Whale Watching Desk'],
+    roomTypes: ['Standard Ocean View Room', 'Plunge Pool Villa'],
+    checkInTime: '14:00',
+    checkOutTime: '11:30',
+    nearbyAttractions: ['Mirissa Whale Port', 'Coconut Tree Hill', 'Secret Beach']
+  }
+];

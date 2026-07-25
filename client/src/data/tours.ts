@@ -1,0 +1,350 @@
+import { Tour } from '../types';
+
+export const SAMPLE_TOURS: Tour[] = [
+  {
+    id: '7-day-sri-lanka-highlights',
+    slug: '7-day-sri-lanka-highlights',
+    title: '7-Day Grand Sri Lanka Cultural & Nature Odyssey',
+    destination: 'Sigiriya, Kandy, Ella, Mirissa & Galle',
+    destinationSlug: 'sigiriya',
+    category: 'Cultural tours',
+    heroImage: 'https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=1200&auto=format&fit=crop',
+    gallery: [
+      'https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1534567153574-2b12153a87f0?q=80&w=1200&auto=format&fit=crop'
+    ],
+    shortDescription: 'The ultimate 7-day Sri Lanka journey: Sigiriya Rock Citadel, Temple of the Tooth, Kandy-to-Ella scenic train, Yala safari, and Mirissa beach relaxation.',
+    fullDescription: 'Immerse yourself in Sri Lanka’s most legendary landscapes. From ancient 5th-century rock citadels to misty tea plantation loops in Ella, world-renowned train rides, wild elephant safaris in Yala, and palm-fringed coastal bays in Mirissa, this carefully curated itinerary offers the complete island experience.',
+    durationDays: 7,
+    durationNights: 6,
+    startingLocation: 'Bandaranaike International Airport (CMB) / Colombo',
+    endingLocation: 'Colombo / Airport (CMB)',
+    priceLKR: 285000,
+    priceUSD: 920,
+    residentDiscountPercentage: 15,
+    rating: 4.9,
+    reviewCount: 148,
+    maxGroupSize: 10,
+    minAge: 4,
+    difficulty: 'Easy',
+    languages: ['English', 'Sinhala', 'German', 'French'],
+    isPrivate: true,
+    isInstantBooking: true,
+    isFamilyFriendly: true,
+    isAccessible: true,
+    highlights: [
+      'Climb 5th-Century Sigiriya Rock Fortress at sunrise',
+      'Visit Dambulla Cave Temple UNESCO frescoes',
+      'Sacred Temple of the Tooth Relic evening Puja in Kandy',
+      'Scenic highland train journey from Kandy to Ella',
+      'Hike Little Adam’s Peak & photos at Nine Arch Bridge',
+      '4x4 Jeep Safari in Yala National Park for leopards',
+      'Unwind at Mirissa beach & explore Galle Dutch Ramparts'
+    ],
+    inclusions: [
+      'Private air-conditioned vehicle with dedicated English-speaking driver-guide',
+      '6 Nights accommodation in 4-star boutique hotels',
+      'Daily breakfast and dinner (Half Board)',
+      'Reserved Kandy to Ella Scenic Train Observation seats',
+      '4x4 Private Jeep Safari in Yala with national park entrance fees',
+      'Sigiriya Citadel & Temple of Tooth entry tickets',
+      'Airport transfer pickup and drop-off',
+      'Complimentary bottled water throughout vehicle journeys'
+    ],
+    exclusions: [
+      'International flight tickets & Sri Lanka ETA Visa fee',
+      'Lunch meals (driver will recommend local authentic restaurants)',
+      'Personal expenses, alcoholic beverages, and tips'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Cultural Triangle (Sigiriya)',
+        location: 'Sigiriya',
+        activity: 'Airport Welcome & Transfer',
+        description: 'Warm Ayubowan welcome at CMB Airport. Scenic drive through coconut groves towards Sigiriya. Check into eco-resort and relax by the pool.',
+        mealsIncluded: ['Dinner'],
+        accommodation: 'Aliya Resort & Spa / Cinnamon Lodge Habarana',
+        travelDuration: '3.5 Hours'
+      },
+      {
+        day: 2,
+        title: 'Sigiriya Rock Fortress Climb & Dambulla Cave Temples',
+        location: 'Sigiriya & Dambulla',
+        activity: 'Heritage Rock Climbing',
+        description: 'Early morning climb of 5th-century Sigiriya Citadel before noon heat. Afternoon visit to Dambulla Golden Cave Temple complex.',
+        mealsIncluded: ['Breakfast', 'Dinner'],
+        accommodation: 'Aliya Resort & Spa',
+        travelDuration: '1.5 Hours'
+      },
+      {
+        day: 3,
+        title: 'Spice Gardens & Arrival in Kandy Sacred Kingdom',
+        location: 'Kandy',
+        activity: 'Temple of the Tooth Visit',
+        description: 'Drive south to Kandy via Matale spice gardens. Evening visit to Temple of the Sacred Tooth Relic followed by Kandyan traditional dance performance.',
+        mealsIncluded: ['Breakfast', 'Dinner'],
+        accommodation: 'Grand Kandyan / Amaya Hills Kandy',
+        travelDuration: '2.5 Hours'
+      },
+      {
+        day: 4,
+        title: 'World-Famous Scenic Blue Train to Ella Highlands',
+        location: 'Ella',
+        activity: 'Highland Train Journey',
+        description: 'Board the mountain railway train passing tea estates, tunnels, and cloud waterfalls to Ella. Sunset hike up Little Adam’s Peak.',
+        mealsIncluded: ['Breakfast', 'Dinner'],
+        accommodation: '98 Acres Resort & Spa / Mountain Heaven Ella',
+        travelDuration: '6 Hours Train'
+      },
+      {
+        day: 5,
+        title: 'Nine Arch Bridge & Yala Leopard Wildlife Safari',
+        location: 'Ella to Yala',
+        activity: '4x4 Wildlife Safari',
+        description: 'Watch train cross Nine Arch Bridge at sunrise. Drive down to Yala National Park for afternoon 4x4 open-top jeep leopard safari.',
+        mealsIncluded: ['Breakfast', 'Dinner'],
+        accommodation: 'Cinnamon Wild Yala / Jetwing Yala',
+        travelDuration: '2.5 Hours Drive + 3.5 Hours Safari'
+      },
+      {
+        day: 6,
+        title: 'Galle Dutch Fort Ramparts & Mirissa Sunset Coast',
+        location: 'Mirissa & Galle',
+        activity: 'Coastal Citadel Exploration',
+        description: 'Drive along Southern coastal highway to Galle Fort. Walk cobblestone bastions and lighthouse at sunset. Beachfront seafood dinner in Mirissa.',
+        mealsIncluded: ['Breakfast', 'Dinner'],
+        accommodation: 'Mandara Resort Mirissa / Weligama Bay Marriott',
+        travelDuration: '2.5 Hours'
+      },
+      {
+        day: 7,
+        title: 'Whale Watching & Departure Transfer to Colombo/Airport',
+        location: 'Mirissa to Colombo',
+        activity: 'Ocean Safari & Return',
+        description: 'Optional early morning blue whale safari in Mirissa. Scenic coastal drive back to Colombo or Airport for evening departure.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Day Departure',
+        travelDuration: '2.5 Hours'
+      }
+    ],
+    cancellationPolicy: 'Free cancellation up to 14 days before arrival date. 50% refund within 7-13 days.',
+    pickupLocations: ['CMB Airport', 'Colombo Hotels', 'Negombo Hotels', 'Kandy Hotels']
+  },
+  {
+    id: 'ella-train-misty-highlands',
+    slug: 'ella-train-misty-highlands',
+    title: '3-Day Ella & Nuwara Eliya Tea Country Escape',
+    destination: 'Ella & Nuwara Eliya',
+    destinationSlug: 'ella',
+    category: 'Weekend tours',
+    heroImage: 'https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=1200&auto=format&fit=crop',
+    gallery: [
+      'https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=1200&auto=format&fit=crop'
+    ],
+    shortDescription: 'Ideal weekend getaway: Kandy to Ella train ride, Nine Arch Bridge, Little Adam’s Peak, and Nuwara Eliya tea estate tour.',
+    fullDescription: 'Escape to cool mountain air, emerald tea hills, and misty waterfalls. Perfect for couples, families, and local weekend travellers looking to recharge.',
+    durationDays: 3,
+    durationNights: 2,
+    startingLocation: 'Kandy or Colombo',
+    endingLocation: 'Colombo / Kandy',
+    priceLKR: 115000,
+    priceUSD: 370,
+    residentDiscountPercentage: 20,
+    rating: 4.9,
+    reviewCount: 96,
+    maxGroupSize: 8,
+    minAge: 2,
+    difficulty: 'Easy',
+    languages: ['English', 'Sinhala'],
+    isPrivate: true,
+    isInstantBooking: true,
+    isFamilyFriendly: true,
+    isAccessible: true,
+    highlights: [
+      'Kandy to Ella mountain blue train ride',
+      'Nine Arch Railway Bridge photoshoot',
+      'Little Adam’s Peak sunrise hike',
+      'Tea factory tasting tour & Nuwara Eliya high tea'
+    ],
+    inclusions: [
+      'Private vehicle transport with driver-guide',
+      '2 Nights boutique mountain hotel stay',
+      'Daily breakfast',
+      'Reserved train ticket'
+    ],
+    exclusions: ['Lunch & Dinner meals', 'Personal expenses'],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Nuwara Eliya Tea Country & Lake Gregory',
+        location: 'Nuwara Eliya',
+        activity: 'Highland Tour',
+        description: 'Drive up through Ramboda Falls to Nuwara Eliya. Visit Pedro Tea Factory and stroll Gregory Lake park.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'The Grand Hotel Nuwara Eliya',
+        travelDuration: '4 Hours'
+      },
+      {
+        day: 2,
+        title: 'Scenic Train to Ella & Nine Arch Bridge',
+        location: 'Ella',
+        activity: 'Train Ride & Hiking',
+        description: 'Board morning mountain train to Ella. Sunset visit to Nine Arch Bridge.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Heaven Edge Ella',
+        travelDuration: '3.5 Hours'
+      },
+      {
+        day: 3,
+        title: 'Little Adam’s Peak & Return Journey',
+        location: 'Ella to Colombo',
+        activity: 'Sunrise Peak Hike',
+        description: 'Sunrise hike up Little Adam’s Peak. Drive back down to Colombo via Ravana Falls.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Return',
+        travelDuration: '5.5 Hours'
+      }
+    ],
+    cancellationPolicy: 'Free cancellation up to 7 days before tour.',
+    pickupLocations: ['Colombo', 'Kandy', 'Negombo']
+  },
+  {
+    id: 'yala-leopard-wildlife-expedition',
+    slug: 'yala-leopard-wildlife-expedition',
+    title: '2-Day Yala & Udawalawe Safari Wilderness Adventure',
+    destination: 'Yala & Udawalawe National Parks',
+    destinationSlug: 'yala',
+    category: 'Wildlife tours',
+    heroImage: 'https://images.unsplash.com/photo-1534567153574-2b12153a87f0?q=80&w=1200&auto=format&fit=crop',
+    gallery: ['https://images.unsplash.com/photo-1534567153574-2b12153a87f0?q=80&w=1200&auto=format&fit=crop'],
+    shortDescription: 'Track wild leopards, sloth bears, and wild elephant herds with private 4x4 open-top safari jeeps.',
+    fullDescription: 'An intense wildlife safari experience covering Yala National Park for leopards and Udawalawe Elephant Transit Home.',
+    durationDays: 2,
+    durationNights: 1,
+    startingLocation: 'Colombo, Galle or Mirissa',
+    endingLocation: 'Colombo or Southern Coast',
+    priceLKR: 95000,
+    priceUSD: 310,
+    residentDiscountPercentage: 15,
+    rating: 4.8,
+    reviewCount: 84,
+    maxGroupSize: 6,
+    minAge: 3,
+    difficulty: 'Easy',
+    languages: ['English', 'Sinhala'],
+    isPrivate: true,
+    isInstantBooking: true,
+    isFamilyFriendly: true,
+    isAccessible: false,
+    highlights: [
+      'Two 4x4 Open-top Jeep Safaris in Yala',
+      'Udawalawe Elephant Orphanage Transit Home',
+      'Leopard, Sloth Bear & Crocodile tracking'
+    ],
+    inclusions: ['4x4 Jeep with park tracker', '1 Night lodge accommodation', 'Park entry tickets'],
+    exclusions: ['Gratuities'],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Udawalawe Elephants & Afternoon Yala Safari',
+        location: 'Yala',
+        activity: 'Jeep Safari',
+        description: 'Morning visit to Udawalawe Elephant Transit Home. Check in lodge and head into Yala Block 1 for afternoon safari.',
+        mealsIncluded: ['Dinner'],
+        accommodation: 'Kalu’s Hideaway / Yala Eco Safari Lodge',
+        travelDuration: '4 Hours Drive + 4 Hours Safari'
+      },
+      {
+        day: 2,
+        title: 'Sunrise Yala Leopard Safari & Return Coast',
+        location: 'Yala to Mirissa/Galle',
+        activity: 'Dawn Game Drive',
+        description: '5:30 AM dawn game drive for leopard tracking when cats are active on rocks. Afternoon return drive along south coast.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Return',
+        travelDuration: '4 Hours Safari + 3.5 Hours Drive'
+      }
+    ],
+    cancellationPolicy: 'Free cancellation up to 5 days before safari.',
+    pickupLocations: ['Mirissa', 'Galle', 'Colombo', 'Hambantota']
+  },
+  {
+    id: 'mirissa-whale-beach-holiday',
+    slug: 'mirissa-whale-beach-holiday',
+    title: '4-Day Southern Coast Beaches, Whales & Galle Fort',
+    destination: 'Mirissa, Weligama & Galle Fort',
+    destinationSlug: 'mirissa',
+    category: 'Beach holidays',
+    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop',
+    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop'],
+    shortDescription: 'Sun, ocean waves, blue whale spotting, beginner surfing, and romantic candlelit seafood dinners.',
+    fullDescription: 'Relax on golden palm-fringed beaches along Sri Lanka’s south coast. Includes blue whale safari, Coconut Tree Hill, surf lessons, and Galle Fort walk.',
+    durationDays: 4,
+    durationNights: 3,
+    startingLocation: 'Colombo / Airport',
+    endingLocation: 'Colombo / Airport',
+    priceLKR: 165000,
+    priceUSD: 530,
+    residentDiscountPercentage: 15,
+    rating: 4.9,
+    reviewCount: 112,
+    maxGroupSize: 10,
+    minAge: 0,
+    difficulty: 'Easy',
+    languages: ['English', 'Sinhala', 'German'],
+    isPrivate: true,
+    isInstantBooking: true,
+    isFamilyFriendly: true,
+    isAccessible: true,
+    highlights: ['Blue Whale boat safari', 'Coconut Tree Hill sunset', 'Galle Fort rampart stroll'],
+    inclusions: ['3 Nights beach resort stay', 'Whale boat safari ticket', 'Private vehicle transport'],
+    exclusions: ['Surfing gear hire', 'Lunch meals'],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Mirissa Bay',
+        location: 'Mirissa',
+        activity: 'Beach Check-in',
+        description: 'Drive via Southern Expressway to Mirissa. Sunset cocktails at Coconut Tree Hill.',
+        mealsIncluded: ['Dinner'],
+        accommodation: 'Paradise Beach Club Mirissa',
+        travelDuration: '2.5 Hours'
+      },
+      {
+        day: 2,
+        title: 'Blue Whale & Dolphin Boat Safari',
+        location: 'Mirissa Ocean',
+        activity: 'Whale Watching',
+        description: 'Board catamaran boat at 6:30 AM to see blue whales in the Indian Ocean.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Paradise Beach Club Mirissa',
+        travelDuration: '4 Hours Boat'
+      },
+      {
+        day: 3,
+        title: 'Surfing Weligama & Galle Dutch Fort',
+        location: 'Galle Fort',
+        activity: 'Citadel Walk',
+        description: 'Surfing lesson in Weligama bay, then late afternoon trip to historic Galle Dutch Fort.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Paradise Beach Club Mirissa',
+        travelDuration: '1 Hour'
+      },
+      {
+        day: 4,
+        title: 'Beach Relaxation & Return',
+        location: 'Mirissa to Colombo',
+        activity: 'Return Transfer',
+        description: 'Lazy morning beach swim before transfer back to Colombo or Airport.',
+        mealsIncluded: ['Breakfast'],
+        accommodation: 'Return',
+        travelDuration: '2.5 Hours'
+      }
+    ],
+    cancellationPolicy: 'Free cancellation up to 7 days before departure.',
+    pickupLocations: ['Colombo Airport', 'Colombo Hotels', 'Bentota']
+  }
+];
